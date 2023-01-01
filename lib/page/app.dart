@@ -15,14 +15,14 @@ class App extends StatelessWidget {
   Widget build(BuildContext context){
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(title: '',),
+      home: Home(),
     );
   }
 }
 
 class Home extends StatefulWidget {
-  const Home({super.key, required this.title});
-  final String title;
+  const Home({super.key});
+
   @override
   State<Home> createState() => _HomeState();
 }
