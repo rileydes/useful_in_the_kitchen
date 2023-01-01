@@ -74,8 +74,8 @@ class _HomeState extends State<Home> {
         backgroundColor: colorScheme.surface,
         selectedItemColor: colorScheme.onSurface,
         unselectedItemColor: colorScheme.onSurface.withOpacity(.60),
-        selectedLabelStyle: textTheme.caption,
-        unselectedLabelStyle: textTheme.caption,
+        selectedLabelStyle: textTheme.bodySmall,
+        unselectedLabelStyle: textTheme.bodySmall,
         onTap: (index) {
           context.read<PageState>().setCurrentPage(index);
           bottomSelectedIndex = index;

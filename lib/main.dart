@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:useful_in_the_kitchen/page/app.dart';
+import 'package:useful_in_the_kitchen/state_managers.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const App(),
-    );
-  }
+  runApp(
+      ChangeNotifierProvider(
+      create: (context) => PageState(),
+        child: const App(),
+      )
+  );
 }

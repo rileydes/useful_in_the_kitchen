@@ -12,7 +12,7 @@ class SearchPageState extends State<SearchPage> with AutomaticKeepAliveClientMix
   Widget build(BuildContext context) {
     super.build(context);
     return Container(
-        color: Theme.of(context).colorScheme.surface,
+        color: Colors.blue,
         );
   }
 
