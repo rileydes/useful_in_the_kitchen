@@ -28,7 +28,7 @@ class SettingsPageState extends State<SettingsPage> with AutomaticKeepAliveClien
               SettingsTile.switchTile(
                 title: 'Dark Mode',
                 onToggle: (bool value) {  },
-                switchValue: true,
+                switchValue: false,
               )
             ],
           )
