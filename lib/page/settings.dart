@@ -12,7 +12,7 @@ class SettingsPageState extends State<SettingsPage> with AutomaticKeepAliveClien
   Widget build(BuildContext context) {
     super.build(context);
     return Container(
-      color: Theme.of(context).colorScheme.surface,
+      color: Colors.green,
     );
   }
 
