@@ -12,7 +12,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin  
   Widget build(BuildContext context) {
     super.build(context);
     return Container(
-      color: Theme.of(context).colorScheme.surface,
+      color: Colors.red,
     );
   }
 
