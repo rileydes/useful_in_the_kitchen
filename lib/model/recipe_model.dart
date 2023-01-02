@@ -46,7 +46,7 @@ class RecipeModel {
   final double protein;
 
   @JsonKey(name: recipeModelDirections)
-  final List<StepModel> steps;
+  final List<String> steps;
 
   const RecipeModel({
     required this.title,
